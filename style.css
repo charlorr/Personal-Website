@@ -9,6 +9,7 @@
   border: 5px solid red;
   max-width: 50%;
   margin: auto;
+  margin-bottom: min(30px);
 }
 
 .icon {
@@ -21,7 +22,14 @@
   padding-left: 20px;
 }
 
-.img-wrapper {
+.column-1 {
+  p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.column-2 {
   width: 100%;
   text-align: center;
 }
@@ -60,6 +68,10 @@ button:active {
   color: #fff;
 } */
 
+html, body {
+  min-height: 100%;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -80,6 +92,8 @@ h1 {
 img {
   width: 40%;
   margin: auto;
+  border-radius: 25px;
+  transform: translate(10px, 2px);
 }
 
 footer {

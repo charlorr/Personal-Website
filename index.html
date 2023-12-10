@@ -10,16 +10,33 @@
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
   </head>
   <body>
+    <div>
+      <div class="title">
+        <h1>Hi, I'm Charlene!</h1>
+      </div>
       <div class="card">
-        <div class="title">
-          <h1>Hi, I'm Charlene!</h1>
+        
+        <div id="summary" style="width: 100%">
+          <div class="column-1" style="width: 50%; float: left;">
+            <p style="line-height: 20px">Welcome to my cozy corner of the web. I'm glad you're here!</p>
+            <p>Some quick stats:</p>
+            <p><span class="icon">💼</span><span class="bio">Software Engineer & Scrum Master at Autodesk</span></p>
+            <p><span class="icon">🎓</span><span class="bio">BS in Computer Science at Purdue University</span></p>
+            <p><span class="icon">📍</span><span class="bio">Chicago, IL</span></p>
+            <div style="display: flex; height: 100px; margin: 0;">
+              <button id="to-about" style="position: relative; margin: auto; display: block; text-decoration: underline">About me</button>
+            </div>
+          </div>
+          <div class="column-2" style="margin-left: auto;">
+            <img class="self-portrait" src="./assets/img/self-portrait.png">
+          </div>
         </div>
-        <div class="summary">
-          <p><span class="icon">💼</span><span class="bio">Software Engineer & Scrum Master at Autodesk</span></p>
-          <p><span class="icon">📍</span><span class="bio">Chicago, IL</span></p>
-          <p style="margin: 0">About me</p>
-        </div>
-        <div class="about">
+        <div id="about" style="display: none">
+          <img class="self-portrait" src="./assets/img/hiking-me.jpg">
+          <img class="self-portrait" src="./assets/img/skyline-from-zoo.jpg">
+          <img class="self-portrait" src="./assets/img/zion-desert.jpg">
+          <img class="self-portrait" src="./assets/img/cta-lovers.jpg">
+
           <p>
             Currently, I'm a software engineer at Autodesk. I work on the data exchange team-- the lovely folks behind the import and export buttons on your favorite Autodesk products (AutoCAD, Inventor, Fusion, Revit, etc.)! My primary focus on the team is designing reliable, quick, and most of all, elegant testing and CI/CD solutions. I write mainly Python, but some other players in my day-to-day are C++, Bash/Batch scripting, Jenkins, and Azure.
           </p>
@@ -30,13 +47,14 @@
             But enough about me, how about you?
           </p>
           <p>
-            Contact me!
+            Contact me using the links below!
           </p>
-          <div class="img-wrapper">
-            <img src="assets/img/hiking_me.jpg">
+          <div style="display: flex; margin: 0">
+            <button id="to-summary" style="position: relative; margin: auto; display: block; text-decoration: underline;">↩ Back to summary</button>
           </div>
         </div>
       </div>
+    </div>
   </body>
   <footer>
     <div>
@@ -47,4 +65,5 @@
       <button onclick="window.open('https://www.linkedin.com/in/charlorr/')" type="button">LinkedIn</button>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </html>
