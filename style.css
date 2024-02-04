@@ -1,4 +1,51 @@
 
+html, body {
+  height: 100%;
+  background: #edebeb;
+  font-family: 'Helvetica', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+}
+
+img {
+  width: 30%;
+  margin: auto;
+  border-radius: 25px;
+  transform: translate(10px, 2px);
+}
+
+button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: .1em 1em;
+  border: none;
+}
+button:hover {
+  text-decoration: underline;
+  
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin: auto 0;
+  margin-bottom: 5px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.god {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
 .title {
   /* background-color: purple; */
   text-align: center;
@@ -38,82 +85,6 @@
   margin-top: -17px;
 }
 
-button {
-  /* --c:  #229091;
-
-  box-shadow: 0 0 0 .1em inset var(--c);
-  --_g: linear-gradient(var(--c) 0 0) no-repeat;
-  background:
-    var(--_g) calc(var(--_p,0%) - 100%) 0%,
-    var(--_g) calc(200% - var(--_p,0%)) 0%,
-    var(--_g) calc(var(--_p,0%) - 100%) 100%,
-    var(--_g) calc(200% - var(--_p,0%)) 100%;
-  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
-  outline-offset: .1em;
-  transition: background-size .4s, background-position 0s .4s; */
-  
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: .1em 1em;
-  border: none;
-}
-button:hover {
-  text-decoration: underline;
-  
-}
-/* button:hover {
-  --_p: 100%;
-  transition: background-position .4s, background-size 0s;
-}
-button:active {
-  box-shadow: 0 0 9e9q inset #0009;
-  background-color: var(--c);
-  color: #fff;
-} */
-
-html, body {
-  min-height: 100%;
-}
-
-body {
-  height: 100vh;
-  min-height: 100%;
-  margin: 0;
-  display: grid;
-  place-content: center;
-  grid-auto-flow: column;
-  gap: 40px;
-  background: #edebeb;
-  font-family: 'Helvetica', sans-serif;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 3rem;
-  margin: 0;
-}
-
-img {
-  width: 30%;
-  margin: auto;
-  border-radius: 25px;
-  transform: translate(10px, 2px);
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  margin: auto 0;
-  margin-bottom: 5px;
-  font-family: 'Helvetica', sans-serif;
-}
-
-#mobile-me {
-  width: 60%;
-}
-
 .mobile-container {
   text-align: center;
 }
@@ -121,6 +92,10 @@ footer {
 .about-pic {
   width: 50%;
   margin: auto;
+}
+
+#mobile-me {
+  width: 60%;
 }
 
 @media screen and (max-width: 700px) {
@@ -131,6 +106,7 @@ footer {
   #mobile-me {display: unset; margin-bottom: 24px;}
   footer {display: none}
   .about-pic {width: 100%}
+
 }
 @media screen and (min-width: 700px) {
   #desktop-me {display: unset}
