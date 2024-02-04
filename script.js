@@ -9,5 +9,5 @@ document.getElementById('to-about').addEventListener('click',function(){
 document.getElementById('to-summary').addEventListener('click',function(){
 
     document.getElementById('about').style.display = "none";
-    document.getElementById('summary').style.display = "block";
+    document.getElementById('summary').style.display = "block"; 
 });

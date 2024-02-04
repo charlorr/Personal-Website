@@ -5,35 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Charlene Orr</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
   </head>
   <body>
-    <div>
+    <div class="god">
       <div class="title">
         <h1>Hi, I'm Charlene!</h1>
       </div>
       <div class="card">
         
         <div id="summary" style="width: 100%">
-          <div class="column-1" style="width: 50%; float: left;">
-            <p style="line-height: 20px">Welcome to my corner of the web. I'm glad you're here!</p>
+          <div class="column-1">
+            <div class="mobile-container">
+            <img id="mobile-me" class="self-portrait" src="./assets/img/self-portrait.png">
+            </div>
+            <p style="line-height: 20px; margin-top: 0">Welcome to my corner of the web. I'm glad you're here!</p>
             <p>Some quick stats:</p>
-            <p><span class="icon">💼</span><span class="bio">Software Engineer at Autodesk</span></p>
-            <p><span class="icon">🎓</span><span class="bio">BS in Computer Science at Purdue University</span></p>
-            <p><span class="icon">📍</span><span class="bio">Chicago, IL</span></p>
-            <div style="display: flex; height: 100px; margin: 0;">
+            <div><span class="icon">💼</span><p class="bio">Software Engineer at Autodesk</p></div>
+            <div><span class="icon">🎓</span><p class="bio">BS in Computer Science at Purdue University</p></div>
+            <div><span class="icon">📍</span><p class="bio">Chicago, IL</p></div>
+            <div style="display: flex; margin: 0;">
               <button id="to-about" style="position: relative; margin: auto; display: block; text-decoration: underline">About me</button>
             </div>
           </div>
           <div class="column-2" style="margin-left: auto;">
-            <img class="self-portrait" src="./assets/img/self-portrait.png">
+            <img id="desktop-me" class="self-portrait" src="./assets/img/self-portrait.png">
           </div>
         </div>
         <div id="about" style="display: none">
           <p>
-            Currently, I'm a software engineer at Autodesk. I work on the data exchange team-- the lovely folks behind the import and export buttons on your favorite Autodesk products (AutoCAD, Inventor, Fusion, Revit, etc.)! My primary focus on the team is designing reliable, quick, and most of all, elegant testing and CI/CD solutions. I write mainly Python, but some other players in my day-to-day are C++, Bash/Batch scripting, Jenkins, Groovy, and Azure. 
+            Currently, I'm a software engineer at Autodesk. I work on the data exchange team-- the lovely folks behind the import and export buttons on your favorite Autodesk products (AutoCAD, Inventor, Fusion, Revit, etc.)! My primary focus on the team is designing reliable, quick, and most of all, elegant testing and CI/CD solutions. I write mainly Python, but some other players in my day-to-day are C++, Bash/Batch scripting, Jenkins, and Azure. 
           </p>
           <p>
             I'm passionate about fostering a thriving team environment. I was my team's scrum master for the past 2 years, and I recently took on a new challenge-- product owner.
@@ -48,7 +51,7 @@
             Contact me using the links below!
           </p> -->
           <div style="display: flex; margin: 0; justify-content: center;">
-            <img class="about-pic" src="./assets/img/hiking-me.jpg" style="width: 50%; margin: auto">
+            <img class="about-pic" src="./assets/img/hiking-me.jpg">
             <button id="to-summary" style="position: relative; margin: auto; text-decoration: underline;">↩ Back to summary</button>
           </div>
         </div>
